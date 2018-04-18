@@ -10,6 +10,10 @@
 		39ACDDB620871868009763C2 /* GGPaykit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39ACDDAC20871868009763C2 /* GGPaykit.framework */; };
 		39ACDDBB20871868009763C2 /* GGPaykitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACDDBA20871868009763C2 /* GGPaykitTests.swift */; };
 		39ACDDBD20871868009763C2 /* GGPaykit.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ACDDAF20871868009763C2 /* GGPaykit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39BB2AB520871B9F00CB884D /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB2AB120871B9F00CB884D /* PaymentController.swift */; };
+		39BB2AB620871B9F00CB884D /* RefundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB2AB220871B9F00CB884D /* RefundController.swift */; };
+		39BB2AB720871B9F00CB884D /* RefundController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BB2AB320871B9F00CB884D /* RefundController.xib */; };
+		39BB2AB820871B9F00CB884D /* PaymentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BB2AB420871B9F00CB884D /* PaymentController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		39ACDDB520871868009763C2 /* GGPaykitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGPaykitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39ACDDBA20871868009763C2 /* GGPaykitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGPaykitTests.swift; sourceTree = "<group>"; };
 		39ACDDBC20871868009763C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BB2AB120871B9F00CB884D /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		39BB2AB220871B9F00CB884D /* RefundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundController.swift; sourceTree = "<group>"; };
+		39BB2AB320871B9F00CB884D /* RefundController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefundController.xib; sourceTree = "<group>"; };
+		39BB2AB420871B9F00CB884D /* PaymentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		39ACDDAE20871868009763C2 /* GGPaykit */ = {
 			isa = PBXGroup;
 			children = (
+				39BB2AB020871B9F00CB884D /* Sources */,
 				39ACDDAF20871868009763C2 /* GGPaykit.h */,
 				39ACDDB020871868009763C2 /* Info.plist */,
 			);
@@ -84,6 +93,17 @@
 				39ACDDBC20871868009763C2 /* Info.plist */,
 			);
 			path = GGPaykitTests;
+			sourceTree = "<group>";
+		};
+		39BB2AB020871B9F00CB884D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				39BB2AB120871B9F00CB884D /* PaymentController.swift */,
+				39BB2AB220871B9F00CB884D /* RefundController.swift */,
+				39BB2AB320871B9F00CB884D /* RefundController.xib */,
+				39BB2AB420871B9F00CB884D /* PaymentController.xib */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BB2AB820871B9F00CB884D /* PaymentController.xib in Resources */,
+				39BB2AB720871B9F00CB884D /* RefundController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BB2AB520871B9F00CB884D /* PaymentController.swift in Sources */,
+				39BB2AB620871B9F00CB884D /* RefundController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +413,7 @@
 		39ACDDC420871868009763C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8MRL9B64V;
 				INFOPLIST_FILE = GGPaykitTests/Info.plist;
@@ -407,6 +432,7 @@
 		39ACDDC520871868009763C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8MRL9B64V;
 				INFOPLIST_FILE = GGPaykitTests/Info.plist;
