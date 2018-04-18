@@ -14,6 +14,8 @@
 		39BB2AB620871B9F00CB884D /* RefundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB2AB220871B9F00CB884D /* RefundController.swift */; };
 		39BB2AB720871B9F00CB884D /* RefundController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BB2AB320871B9F00CB884D /* RefundController.xib */; };
 		39BB2AB820871B9F00CB884D /* PaymentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BB2AB420871B9F00CB884D /* PaymentController.xib */; };
+		39BB2AE42087203F00CB884D /* GGPayKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39BB2AE32087203F00CB884D /* GGPayKit.podspec */; };
+		39BB2AE72087208600CB884D /* Target_GGPayKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB2AE62087208600CB884D /* Target_GGPayKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		39BB2AB220871B9F00CB884D /* RefundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundController.swift; sourceTree = "<group>"; };
 		39BB2AB320871B9F00CB884D /* RefundController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefundController.xib; sourceTree = "<group>"; };
 		39BB2AB420871B9F00CB884D /* PaymentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentController.xib; sourceTree = "<group>"; };
+		39BB2AE32087203F00CB884D /* GGPayKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GGPayKit.podspec; sourceTree = "<group>"; };
+		39BB2AE62087208600CB884D /* Target_GGPayKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_GGPayKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		39ACDDA220871868009763C2 = {
 			isa = PBXGroup;
 			children = (
+				39BB2AE32087203F00CB884D /* GGPayKit.podspec */,
 				39ACDDAE20871868009763C2 /* GGPaykit */,
 				39ACDDB920871868009763C2 /* GGPaykitTests */,
 				39ACDDAD20871868009763C2 /* Products */,
@@ -79,6 +84,7 @@
 		39ACDDAE20871868009763C2 /* GGPaykit */ = {
 			isa = PBXGroup;
 			children = (
+				39BB2AE52087206600CB884D /* Target */,
 				39BB2AB020871B9F00CB884D /* Sources */,
 				39ACDDAF20871868009763C2 /* GGPaykit.h */,
 				39ACDDB020871868009763C2 /* Info.plist */,
@@ -104,6 +110,14 @@
 				39BB2AB420871B9F00CB884D /* PaymentController.xib */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		39BB2AE52087206600CB884D /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				39BB2AE62087208600CB884D /* Target_GGPayKit.swift */,
+			);
+			path = Target;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BB2AE42087203F00CB884D /* GGPayKit.podspec in Resources */,
 				39BB2AB820871B9F00CB884D /* PaymentController.xib in Resources */,
 				39BB2AB720871B9F00CB884D /* RefundController.xib in Resources */,
 			);
@@ -218,6 +233,7 @@
 			files = (
 				39BB2AB520871B9F00CB884D /* PaymentController.swift in Sources */,
 				39BB2AB620871B9F00CB884D /* RefundController.swift in Sources */,
+				39BB2AE72087208600CB884D /* Target_GGPayKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

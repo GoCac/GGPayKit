@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GGPayKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "哈哈哈哈哈"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
   s.swift_version = '4.0'
-  s.source_files  = "GGPayKit/Sources/*.{h,m,swift}"
+  s.source_files  = "GGPayKit/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -107,7 +107,7 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
 
-  s.resources = "GGPayKit/Sources/*.xib"
+  s.resources = "GGPayKit/**/*.xib"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
