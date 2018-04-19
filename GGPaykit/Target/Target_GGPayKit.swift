@@ -20,12 +20,14 @@ class Target_GGPayKit: NSObject {
             callback("refund")
         }
         
-        let vc = RefundController(nibName: "RefundController", bundle: Bundle.main)
+        let bundle = Bundle(for: RefundController.self)
+        let vc = RefundController(nibName: "RefundController", bundle: bundle)
         return vc
     }
     
     @objc
     func Action_payment(params:NSDictionary) -> UIViewController {
-        return PaymentController(nibName: "PaymentController", bundle: Bundle.main)
+        let bundle = Bundle(for: PaymentController.self)
+        return PaymentController(nibName: "PaymentController", bundle: bundle)
     }
 }
